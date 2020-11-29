@@ -1,6 +1,6 @@
 <form id="newOrder" class="ui form" method= "POST">
 
-  <h4 class="ui dividing header">Shipping Information</h4>
+  <h4 class="ui dividing header">Order Information</h4>
   <div class="field">
     <label>Name</label>
     <div class="two fields">
@@ -360,8 +360,7 @@
     </div>
   </div>
 
-  <div class="ui green button" tabindex="0" id="manuel-order-opener"> Create Order</div>
-  <input class="ui orange button" type="submit" name="test" id="test" value="RUN" /><br/>
+  <input class="ui orange button" type="submit" name="test" id="test" value="Update Order" /><br/>
   <!-- <form action="" method="POST">
 
 

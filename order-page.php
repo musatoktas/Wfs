@@ -3,16 +3,7 @@
               <i class="plus icon"></i>
               New Order
             </button>
-            <form action="" method="POST">
-            <button class="ui red compact labeled icon button" name="delete-order" style="margin-bottom:20px;" id="delete-order">
-            <i class="minus circle icon"></i>
-              Delete Orders
-            </button>
-            </form>
-            <button class="ui blue compact labeled icon button" style="margin-bottom:20px;" id="new-order-button">
-            <i class="minus circle icon"></i>
-              Update Orders
-            </button>
+            <button id="order-updater-input" class="ui blue compact button" name="update-order" >Update Orders</button>
             <form action="" method="POST">
             <button class="ui right floated teal big compact labeled icon button" style="margin-bottom:20px;" id="create-label">
             <i class="file pdf outline icon"></i>
@@ -20,11 +11,7 @@
             </button>
 
             </form>
-            <!-- table goes here --> 
-            <button class="ui right floated teal big compact labeled icon button"  name="get-order" style="margin-bottom:20px;" id="get-order">
-            <i class="plus icon"></i>
-              New Order
-            </button>   
+            
 
             <?php include_once "./deleted/sandbox/checkbox-form.php"?>
       

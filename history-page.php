@@ -11,8 +11,7 @@
             </button>
             <!-- table goes here --> 
 
-            <?php include_once "./deleted/sandbox/checkbox-form.php" ?>
-
+<p>Tertemiz History</p>
           </div>
           <script>
                             $(document).ready(function() {

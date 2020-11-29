@@ -63,32 +63,34 @@
       </a>
       <a href="https://semantic-ui.com/examples/fixed.html#" class="item">Dashboard</a>
       <div class="ui simple dropdown item">
-        Customers <i class="dropdown icon"></i>
+        Manage <i class="dropdown icon"></i>
         <div class="menu">
-          <a class="item" href="https://semantic-ui.com/examples/fixed.html#">All Customers</a>
-          <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Link Item</a>
-          <div class="divider"></div>
-          <div class="header">Header Item</div>
+          
+          <div class="header">Customers</div>
           <div class="item">
             <i class="dropdown icon"></i>
-            Sub Menu
+            Clients
             <div class="menu">
-              <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Link Item</a>
-              <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Link Item</a>
+              <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Total Customers</a>
+              <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Unpaid Customers</a>
             </div>
           </div>
-          <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Link Item</a>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Orders
+            <div class="menu">
+              <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Total Orders</a>
+              <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Failed Orders</a>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
   <div class="ui grid" style="margin: 1em 0em 1em 2em;">
-          <div class="two wide computer two wide tablet six wide mobile column"><?php
-              echo file_get_contents("./admin/left-sidebar-admin.php");
-          ?>
-          </div>
-  
-          <div class="fourteen wide computer fourteen wide tablet six wide mobile column">
+          
+          <div class="sixteen wide computer fourteen wide tablet six wide mobile column">
             <div class="ui segment">
 
               <!-- Starting & Add Customer --> 
@@ -264,11 +266,11 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['June', 'July', 'August', 'September', 'October', 'November', 'December'],
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            label: 'Monthly Printed Labels',
+            backgroundColor: 'rgb(105, 99, 120)',
+            borderColor: 'rgb(105, 99, 120)',
             data: [0, 10, 5, 2, 20, 30, 45]
         }]
     },

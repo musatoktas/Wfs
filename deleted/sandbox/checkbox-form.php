@@ -1,9 +1,9 @@
 
 
 <?php
- //require_once "../../vendor/autoload.php";  
-use GuzzleHttp\Client;
-$client = new GuzzleHttp\Client();
+ require_once "vendor/autoload.php";  
+ use GuzzleHttp\Client;
+ $client = new GuzzleHttp\Client();
 try {
        $responseArray = $client->request('GET', 'http://ssapi.shipstation.com/orders?customerName=headhoncho@whitehouse.gov&page=1&pageSize=15', ['auth' => ['c5deeb1c82fb4dbfa46e0935802e0f10', '7826d3edc0f747c69bcbc174a2f32c4a']]);   
        if($responseArray->getStatusCode()!= 200){
@@ -16,8 +16,10 @@ try {
       echo 'Message: Connection Error ' .$e->getMessage();
     }
 ?>
+
 <form id="frm-example" action="" method="POST">
-<input class="ui red compact labeled icon button" type="submit" name="submit1" value="Delete Orders">
+<input class="ui red compact button" type="submit" name="delete-order" value="Delete Orders">
+<input class="ui purple compact button" type="submit" name="void-label" value="Void Label">
 <!-- <table class="table table-striped" id="example">
     <thead>
         <tr>
@@ -102,24 +104,26 @@ try {
 </form>
 
 <?php
-if(isset($_POST["submit1"]))
+if(isset($_POST["delete-order"]))
 {
    $box=$_POST['id'];
       while(list ($key,$val) = @each ($box))
       {
+         echo "$key";
          echo "$val";
-         $response = $client->request('DELETE', 'http://ssapi.shipstation.com/orders/'.$val, ['auth' => ['c5deeb1c82fb4dbfa46e0935802e0f10', '7826d3edc0f747c69bcbc174a2f32c4a']]);
-     
+         $response = $client->request('DELETE', 'http://ssapi.shipstation.com/orders/'.$val, ['auth' => ['c5deeb1c82fb4dbfa46e0935802e0f10', '7826d3edc0f747c69bcbc174a2f32c4a']]);    
       }
    ?>
    <script type="text/javascript">
    window.location.href=window.location.href;
    </script>
-   <?php
-   
+   <?php 
 }
+//Update Order
+
 ?>
 <?php 
+//Create Label pdf generator
 if(isset($_POST["submit2"]))
 {
 # Define the Base64 string of the PDF file
