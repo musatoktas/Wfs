@@ -40,9 +40,8 @@
   #account-settings-modal .ui.active.tab.segment {
     margin: 20px;
   }
-  .gosterme {
-    display:none!important;
-  }
+  
+      
   </style>
 <!-- footer styles end-->
 </head>
@@ -88,6 +87,7 @@ $client = new Client([
 <!-- footergoes here --> 
 
       <?php include_once "footer.php" ?>
+<!-- FUCKIN MODALS ARE HERE --> 
 
       <div class="ui modal" id="new-order-modal">
        <div class="scrolling content" style="margin-bottom:50px;">
@@ -101,12 +101,19 @@ $client = new Client([
               <div class="eight wide computer nine wide tablet six wide mobile column"></div>
            </div>
        </div>
+    
+      <div class="ui modal" id="update-order-modal">
+           <div class="scrolling content" style="margin-bottom:50px;">
+            <?php include_once "./forms/update-order.php" ?>
+          </div>
       </div>
+    
 
       <div class="ui modal" id="account-settings-modal">
 
       <?php include_once "./forms/account-settings-form.php" ?>          
       </div>
+<!--  MODALS FINISH -->
       <script>
 </script>
 
@@ -115,9 +122,8 @@ $client = new Client([
 //tab opener
             $('.account-settings-modal.menu .item').tab({history:false});
             $('#password-reset-controller').click(function(){      
-            $("#password-reset-form").toggleClass('gosterme');
-});
-
+                $("#password-reset-form").toggleClass('gosterme');
+            });
         });
 
 
@@ -133,13 +139,20 @@ $client = new Client([
         $("#new-order-button").click( function(){
               $("#new-order-modal").modal("show");
         });
-        $("#manuel-order-opener").click( function(){
-            $("#manuel-order-modal").modal("show");
-        });
+        //$("#manuel-order-opener").click( function(){
+           // $("#manuel-order-modal").modal("show");
+      //  });
         $("#account-settings-button").click( function(){
             $("#account-settings-modal").modal("show");
         });
+        $("#order-updater-input").click( function(){
+              $("#update-order-modal").modal("show");
+        });  
+          
+          
+          
         $('.ui.dropdown').dropdown('hide');
+          
         
         
       </script>
