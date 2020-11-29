@@ -1,13 +1,8 @@
         <div class="ui segment">
     
         <p>Account Settings Form</p></div>
-           <div class="ui pointing secondary account-settings-modal menu">
-              <a class="active red item" data-tab="first">General</a>
-              <a class="blue item" data-tab="second">Partnership</a>
-              <a class="green item" data-tab="third">Balance</a>
-            </div>
-
-          <div class="ui active tab segment" data-tab="first">
+           
+          <div class="ui segment" style="margin:10px;">
           <div class="ui form">
               <h4 class="ui dividing header">Personal Information</h4>
                 <div class="field">
@@ -56,10 +51,9 @@
                 </div>
             </div>
         
-        </div>
-          <div class="ui tab segment" data-tab="second">
+      
           <div class="ui form">
-              <h4 class="ui dividing header">Partnership Information</h4>
+              <h4 class="ui dividing header" style="margin:10px;">Partnership Information</h4>
                 <div class="field">
                   <label>Company Name</label>
                 
@@ -85,8 +79,7 @@
                     
                 </div>
             </div>
-          </div>
-          <div class="ui tab segment" data-tab="third"><div class="ui right labeled left icon input">
+          <div class="ui right labeled left icon input" style="margin-top:10px;">
                   <i class="dollar icon"></i>
                   <input type="text" value="132">
                   <a class="ui tag label">
