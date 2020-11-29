@@ -21,7 +21,7 @@
     </div>
     <div class="ui labeled button" tabindex="0">
         <div class="ui button">
-        <i class="boxes icon"></i> <p style="font-size:10px; padding:0 3px;"">Awaiting Package</p>
+        <i class="boxes icon"></i> <p style="font-size:10px; padding:0 3px;">Awaiting Package</p>
         </div>
         <a class="ui basic label" style="min-width:10px;">
         309
@@ -37,7 +37,7 @@
     </div>
     <div class="ui labeled button" tabindex="0">
         <div class="ui button">
-        <i class="copyright outline icon"></i> <p style="font-size:10px;padding:0 20.5px;"">Cancelled</p>
+        <i class="copyright outline icon"></i> <p style="font-size:10px;padding:0 20.5px;">Cancelled</p>
         </div>
         <a class="ui basic label">
         104
