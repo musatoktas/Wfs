@@ -115,9 +115,8 @@ $client = new Client([
 //tab opener
             $('.account-settings-modal.menu .item').tab({history:false});
             $('#password-reset-controller').click(function(){      
-            $("#password-reset-form").toggleClass('gosterme');
-});
-
+                $("#password-reset-form").toggleClass('gosterme');
+            });
         });
 
 

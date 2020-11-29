@@ -41,7 +41,9 @@
   .main.container {
     margin-top: 7em;
   }
-
+.gosterme {
+    display:none!important;
+  }
   .ui.footer.segment {
     margin: 5em 0em 0em;
     padding: 5em 0em;
@@ -59,11 +61,11 @@
       <a href="https://semantic-ui.com/examples/fixed.html#" class="header item">
       <img src="./src/shipping-logo-long-white.png" class="ui logo centered small image">
       </a>
-      <a href="https://semantic-ui.com/examples/fixed.html#" class="item">Home</a>
+      <a href="https://semantic-ui.com/examples/fixed.html#" class="item">Dashboard</a>
       <div class="ui simple dropdown item">
-        Dropdown <i class="dropdown icon"></i>
+        Customers <i class="dropdown icon"></i>
         <div class="menu">
-          <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Link Item</a>
+          <a class="item" href="https://semantic-ui.com/examples/fixed.html#">All Customers</a>
           <a class="item" href="https://semantic-ui.com/examples/fixed.html#">Link Item</a>
           <div class="divider"></div>
           <div class="header">Header Item</div>
@@ -229,7 +231,7 @@
 
       <div class="ui modal" id="customer-details-modal">
         <div class="scrolling content" style="margin-bottom:50px;">
-          <?php include_once "./admin/customer-table.html" ?>
+          <?php include_once "./admin-files/add-new-user.php" ?>
         </div>
       </div>
 <script>
@@ -240,7 +242,13 @@
   $(document).ready( function () {
             $('#admin-tablo').DataTable();
             console.log("calışır");
-  });
+            
+            $('.account-settings-modal.menu .item').tab({history:false});
+                $('#password-reset-controller').click(function(){      
+                    $("#password-reset-form").toggleClass('gosterme');
+                });
+            });
+    
   $("#customer-details-button").click( function(){
               $("#customer-details-modal").modal("show");
         });
@@ -269,5 +277,6 @@ var chart = new Chart(ctx, {
     options: {}
 });
 //CHART ENDS
+   
 </script>
 </body></html>
