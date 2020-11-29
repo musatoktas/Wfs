@@ -1,4 +1,4 @@
-<div class="ui segment">
+        <div class="ui segment">
     
         <p>Account Settings Form</p></div>
            <div class="ui pointing secondary account-settings-modal menu">
@@ -86,5 +86,10 @@
                 </div>
             </div>
           </div>
-          <div class="ui tab segment" data-tab="third">Balance</div>
-       </div>
+          <div class="ui tab segment" data-tab="third"><div class="ui right labeled left icon input">
+                  <i class="dollar icon"></i>
+                  <input type="text" value="132">
+                  <a class="ui tag label">
+Balance                  </a>
+                </div></div>
+      
